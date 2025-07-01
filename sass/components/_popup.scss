@@ -22,6 +22,11 @@
         opacity: 0;
         transform: translate(-50%, -50%) scale(.25);
         transition: all .5s .2s;
+
+        @media (max-width: 768px) {
+           width: 90%;
+           padding: 2rem;
+        }
     }
 
     &__left {
@@ -34,6 +39,10 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @media (max-width: 768px) {
+            padding: 1.5rem;
+        }
     }
 
     &__img {
@@ -57,6 +66,11 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        @media (max-width: 768px) {
+           column-count: 1;
+           font-size: 1.2rem; // Make the text smaller on mobile
+        }
     }
 
     //Open states
